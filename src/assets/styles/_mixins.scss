@@ -1,0 +1,25 @@
+@mixin btn-full {
+    padding: .5rem 1rem;
+    background-color: $secondary-color;
+    border: 1px solid $secondary-color;
+    border-radius: .3rem;
+    color: white;
+    text-decoration: none;
+    &:hover {
+        background-color: $secondary-hover;
+        border-color: $secondary-hover;
+    }
+};
+
+@mixin btn-empty-dark {
+    padding: .5rem 1rem;
+    background-color: transparent;
+    border: 1px solid $secondary-color;
+    border-radius: .3rem;
+    color: white;
+    text-decoration: none;
+    &:hover {
+        background-color: $secondary-hover;
+        border-color: $secondary-hover;
+    }
+}

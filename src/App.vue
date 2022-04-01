@@ -25,8 +25,15 @@ export default {
 <style lang="scss">
 @import './assets/styles/style.scss';
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #app {
   font-family: 'Roboto', sans-serif;
+  color: $primary-color;
 }
 
 </style>
