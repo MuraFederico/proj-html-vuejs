@@ -1,8 +1,8 @@
 <template>
   <nav>
     <div class="logo">
-        <span>NEX</span>
-        <span>GEN</span>
+        <span class="overlay">N E X</span>
+        <span>G E N</span>
     </div>
 
     <ul>
@@ -71,5 +71,27 @@ nav {
 }
 .btn-full {
     @include btn-full
+}
+
+.logo {
+    font-weight: 600;
+}
+
+.overlay {
+        position: relative;
+        padding: .5rem 0rem .5rem 1.5rem;
+        color: #39c4c6;
+    }
+
+.overlay::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: $secondary-color;
+    border-radius: 100px 0 0 100px;
+    opacity: 0.2;
 }
 </style>

@@ -32,7 +32,7 @@
     <div class="jumbo">
         <nav-header/>
         <div class="header-content">
-            <h1>Lead ~ <span>Customer</span></h1>
+            <h1>Lead ~ <span class="overlay">Customer</span></h1>
             <p>Successful strategies require data analysis, creativity and customer focus, taking advantage of the latest technologies to offer eccellent services.</p>
             <a class="btn-full" href="#section-contact">GET IN TOUCH</a>
             <a class="btn-empty" href="#section-contact">READ MORE</a>
@@ -108,6 +108,24 @@ export default {
         font-size: 60px;
         font-weight: bold;
     }
+    
+    .overlay {
+        position: relative;
+        padding: 0 .8rem;
+
+    }
+
+    .overlay::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: $secondary-color;
+        opacity: 0.2;
+    }
+
     p {
         margin: 2rem 0;
         line-height: 1.5rem;
