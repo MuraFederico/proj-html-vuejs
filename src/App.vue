@@ -32,7 +32,7 @@ export default {
 }
 
 #app {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: $primary-color;
 }
 
