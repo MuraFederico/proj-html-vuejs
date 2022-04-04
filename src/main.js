@@ -5,7 +5,7 @@ import App from './App.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 /* import specific icons */
-import { faClock } from '@fortawesome/free-solid-svg-icons'
+import { faClock as fasClock } from '@fortawesome/free-solid-svg-icons'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faAward } from '@fortawesome/free-solid-svg-icons'
@@ -26,6 +26,10 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 import { faPenToSquare } from '@fortawesome/free-regular-svg-icons'
 import { faGem } from '@fortawesome/free-regular-svg-icons'
+import { faUser } from '@fortawesome/free-regular-svg-icons'
+import { faClock as farClock } from '@fortawesome/free-regular-svg-icons'
+
+
 
 
 
@@ -42,7 +46,7 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* add icons to the library */
-library.add(faClock)
+library.add(fasClock, farClock)
 library.add(faPhone)
 library.add(faEnvelope)
 library.add(faFacebookF)
@@ -62,6 +66,9 @@ library.add(faRocket)
 library.add(faGem)
 library.add(faCheck)
 library.add(faXmark)
+library.add(faUser)
+
+
 
 
 

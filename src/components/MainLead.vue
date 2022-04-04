@@ -4,6 +4,7 @@
       <section-company />
       <section-services />
       <section-prices />
+      <section-news />
   </main>
 </template>
 
@@ -12,6 +13,8 @@ import SectionDescription from './SectionDescription.vue';
 import SectionCompany from './SectionCompany.vue';
 import SectionServices from './SectionServices.vue';
 import SectionPrices from './SectionPrices.vue';
+import SectionNews from './SectionNews.vue';
+
 
 
 
@@ -23,6 +26,7 @@ export default {
         SectionCompany,
         SectionServices,
         SectionPrices,
+        SectionNews,
     }
 }
 </script>

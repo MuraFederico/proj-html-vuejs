@@ -1,40 +1,49 @@
 @mixin btn-full {
-    padding: .5rem 1rem;
+    padding: .5em 1em;
     background-color: $secondary-color;
     border: 1px solid $secondary-color;
     border-radius: .3rem;
     color: white;
+    font-weight: 600;
+    font-size: 20px;
     text-decoration: none;
     &:hover {
         background-color: $secondary-hover;
         border-color: $secondary-hover;
+        cursor: pointer;
     }
 };
 
 @mixin btn-empty-dark {
-    padding: .5rem 1rem;
+    padding: .5em 1em;
     background-color: transparent;
     border: 1px solid $secondary-color;
     border-radius: .3rem;
     color: white;
+    font-weight: 600;
+    font-size: 20px;
     text-decoration: none;
     &:hover {
         background-color: $secondary-hover;
         border-color: $secondary-hover;
+        cursor: pointer;
     }
 }
 
 @mixin btn-empty-light {
-    padding: .5rem 1rem;
+    padding: .5em 1em;
     background-color: white;
     border: 1px solid $secondary-color;
     border-radius: .3rem;
     color: $secondary-color;
+    font-weight: 600;
+    font-size: 20px;
     text-decoration: none;
     &:hover {
         background-color: $secondary-hover;
         border-color: $secondary-hover;
         color: white;
+        cursor: pointer;
     }
 }
 
