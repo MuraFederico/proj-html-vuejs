@@ -17,8 +17,16 @@ import { faChartSimple } from '@fortawesome/free-solid-svg-icons'
 import { faPlaneUp } from '@fortawesome/free-solid-svg-icons'
 import { faScaleBalanced } from '@fortawesome/free-solid-svg-icons'
 import { faInbox } from '@fortawesome/free-solid-svg-icons'
+import { faRocket } from '@fortawesome/free-solid-svg-icons'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
+
+
+
 
 import { faPenToSquare } from '@fortawesome/free-regular-svg-icons'
+import { faGem } from '@fortawesome/free-regular-svg-icons'
+
 
 
 
@@ -50,6 +58,14 @@ library.add(faChartSimple)
 library.add(faPlaneUp)
 library.add(faScaleBalanced)
 library.add(faInbox)
+library.add(faRocket)
+library.add(faGem)
+library.add(faCheck)
+library.add(faXmark)
+
+
+
+
 
 
 
