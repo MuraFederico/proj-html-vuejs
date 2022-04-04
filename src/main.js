@@ -8,10 +8,18 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faAward } from '@fortawesome/free-solid-svg-icons'
+import { faLock } from '@fortawesome/free-solid-svg-icons'
+import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
+
+
+import { faPenToSquare } from '@fortawesome/free-regular-svg-icons'
+
+
+
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-
 
 
 
@@ -27,6 +35,14 @@ library.add(faEnvelope)
 library.add(faFacebookF)
 library.add(faTwitter)
 library.add(faLinkedinIn)
+library.add(faAward)
+library.add(faLock)
+library.add(faPenToSquare)
+library.add(faGraduationCap)
+
+
+
+
 
 
 

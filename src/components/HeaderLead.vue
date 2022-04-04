@@ -112,30 +112,32 @@ export default {
     .overlay {
         position: relative;
         padding: 0 .8rem;
-
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-color: $secondary-color;
+            opacity: 0.2;
+        }
     }
 
-    .overlay::before {
-        content: "";
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        background-color: $secondary-color;
-        opacity: 0.2;
-    }
 
     p {
         margin: 2rem 0;
         line-height: 1.5rem;
     }
+
     a {
         margin: 0 .5rem;
     }
+
     .btn-full {
         @include btn-full
     }
+    
     .btn-empty {
         @include btn-empty-dark
     }
