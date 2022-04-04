@@ -41,4 +41,12 @@ export default {
   @include btn-empty-dark
 }
 
+.container-card {
+  transition: transform, .5s;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
 </style>

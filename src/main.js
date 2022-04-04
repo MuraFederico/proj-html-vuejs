@@ -20,6 +20,8 @@ import { faInbox } from '@fortawesome/free-solid-svg-icons'
 import { faRocket } from '@fortawesome/free-solid-svg-icons'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+
 
 
 
@@ -67,6 +69,8 @@ library.add(faGem)
 library.add(faCheck)
 library.add(faXmark)
 library.add(faUser)
+library.add(faArrowRight)
+
 
 
 

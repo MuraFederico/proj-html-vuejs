@@ -99,6 +99,7 @@
         margin: 1rem;
         background-color: #19191f;
         border-radius: .5rem;
+
         .container-icon {
             
             .icon {
@@ -107,6 +108,10 @@
             }
         }
 
+        &:hover .icon {
+            color: white;
+        }
+        
         h2 {
           margin: .7rem 0;
           font-size: 24px;

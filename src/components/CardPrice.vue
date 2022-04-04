@@ -3,6 +3,7 @@
     <span v-if="cardData.isPopular" class="most-popular">
       Most Popular
     </span>
+    <font-awesome-icon class="show" icon="fa-solid fa-arrow-right" />
     <font-awesome-icon class="icon" :icon="cardData.icon" />
     <h2>{{ cardData.title }}</h2>
     <div class="container-price">$ <span class="price">{{ cardData.price }}</span>/mo</div>
@@ -88,9 +89,22 @@ export default {
         font-size: 20px;
       }
     }
+
+    &:hover .show {
+      visibility: visible;
+    }
   }
   
   .bigger-card {
     padding-bottom: 5rem;
+  }
+
+  .show {
+    position: absolute;
+    top: 20px;
+    right: 1.5rem;
+    color: $secondary-hover;
+    font-size: 30px;
+    visibility: hidden;
   }
 </style>
