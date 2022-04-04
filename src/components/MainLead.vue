@@ -1,20 +1,24 @@
 <template>
   <main>
-      <selection-description/>
-      <selection-company />
+      <section-description/>
+      <section-company />
+      <section-services />
   </main>
 </template>
 
 <script>
-import SelectionDescription from './SectionDescription.vue';
-import SelectionCompany from './SectionCompany.vue';
+import SectionDescription from './SectionDescription.vue';
+import SectionCompany from './SectionCompany.vue';
+import SectionServices from './SectionServices.vue';
+
 
 
 export default {
     name: 'MainLead',
     components: {
-        SelectionDescription,
-        SelectionCompany
+        SectionDescription,
+        SectionCompany,
+        SectionServices,
     }
 }
 </script>

@@ -6,6 +6,7 @@
       </div>
       <h2>{{ cardData.title }}</h2>
       <p>{{ cardData.content }}</p>
+      <a v-if="btnTitle != null" href="" class="btn">{{ btnTitle }}</a>
     </div>
   </div>
 </template>
@@ -16,6 +17,11 @@ export default {
     props: {
       cardData: Object,
       theme: String,
+      btnTitle: {
+        type: String,
+        required: false,
+        default: null,
+      }
     }
 }
 </script>
@@ -25,6 +31,14 @@ export default {
 
 .light {
   @include light-theme
+}
+
+.dark {
+  @include dark-theme
+}
+
+.btn {
+  @include btn-empty-dark
 }
 
 </style>

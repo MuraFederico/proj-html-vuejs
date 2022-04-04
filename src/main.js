@@ -11,7 +11,12 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faAward } from '@fortawesome/free-solid-svg-icons'
 import { faLock } from '@fortawesome/free-solid-svg-icons'
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
-
+import { faNetworkWired } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
+import { faChartSimple } from '@fortawesome/free-solid-svg-icons'
+import { faPlaneUp } from '@fortawesome/free-solid-svg-icons'
+import { faScaleBalanced } from '@fortawesome/free-solid-svg-icons'
+import { faInbox } from '@fortawesome/free-solid-svg-icons'
 
 import { faPenToSquare } from '@fortawesome/free-regular-svg-icons'
 
@@ -39,6 +44,18 @@ library.add(faAward)
 library.add(faLock)
 library.add(faPenToSquare)
 library.add(faGraduationCap)
+library.add(faNetworkWired)
+library.add(faBriefcase)
+library.add(faChartSimple)
+library.add(faPlaneUp)
+library.add(faScaleBalanced)
+library.add(faInbox)
+
+
+
+
+
+
 
 
 

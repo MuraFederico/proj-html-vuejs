@@ -22,18 +22,19 @@ export default {
     width: 50%;
     .icon{
       color: $secondary-hover;
+      font-size: 26px;
     }
     h2 {
       display: inline-block;
       margin: 1rem .3rem;
-      font-size: 16px;
+      font-size: 26px;
       font-weight: 600;
       color: $title-color;
     }
     p {
       margin-bottom: 1rem;
       color: $title-color;
-      font-size: 12px;
+      font-size: 16px;
     }
   }
 </style>

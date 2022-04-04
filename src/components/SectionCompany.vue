@@ -81,7 +81,7 @@ export default {
       content: url('../assets/img/dotted-grid.svg');
       width: 150px;
       position: absolute;
-      bottom: -30px;
+      bottom: -40px;
       left: 50%;
       transform: translateX(-50%);
       z-index: 1000;
@@ -103,7 +103,7 @@ export default {
     }
     h2 {
       color: $title-color;
-      font-size: 30px;
+      font-size: 46px;
     }
     .overlay {
       position: relative;
@@ -119,13 +119,14 @@ export default {
           bottom: 0px;
           left: 0px;
           background-color: $secondary-color;
+          border-radius: .3rem;
           opacity: .15;
       }
     }
     p {
       margin-bottom: 2rem;
       color: $title-color;
-      font-size: 12px;
+      font-size: 16px;
     }
   }
 
@@ -135,7 +136,9 @@ export default {
   }
 
   .container-img {
+    max-height: 840px;
     width: 50%;
+    overflow: hidden;
     img {
       width: 100%;
     }
