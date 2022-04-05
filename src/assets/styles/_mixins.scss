@@ -75,7 +75,11 @@
                 opacity: .15;
             }
             .icon {
-                font-size: 36px;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 30px;
             }
         }
         h2 {
@@ -111,7 +115,7 @@
         &:hover .icon {
             color: white;
         }
-        
+
         h2 {
           margin: .7rem 0;
           font-size: 24px;

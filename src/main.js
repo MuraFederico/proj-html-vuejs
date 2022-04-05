@@ -21,6 +21,8 @@ import { faRocket } from '@fortawesome/free-solid-svg-icons'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
+
 
 
 
@@ -70,6 +72,8 @@ library.add(faCheck)
 library.add(faXmark)
 library.add(faUser)
 library.add(faArrowRight)
+library.add(faLocationDot)
+
 
 
 

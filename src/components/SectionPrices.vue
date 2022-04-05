@@ -135,22 +135,22 @@ export default {
       color: $title-color;
       font-size: 50px;
 
-        .overlay {
-        position: relative;
-        padding: 0 .3em;
-        color: $secondary-hover;
+      .overlay {
+      position: relative;
+      padding: 0 .3em;
+      color: $secondary-hover;
 
 
         &::before {
-            content: '';
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            bottom: 0px;
-            left: 0px;
-            background-color: $secondary-color;
-            border-radius: .3rem;
-            opacity: .15;
+          content: '';
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          bottom: 0px;
+          left: 0px;
+          background-color: $secondary-color;
+          border-radius: .3rem;
+          opacity: .15;
         }
       }
     }

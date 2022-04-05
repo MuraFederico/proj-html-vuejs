@@ -6,6 +6,7 @@
       <section-prices />
       <section-news />
       <section-mails />
+      <section-contact />
   </main>
 </template>
 
@@ -16,6 +17,8 @@ import SectionServices from './SectionServices.vue';
 import SectionPrices from './SectionPrices.vue';
 import SectionNews from './SectionNews.vue';
 import SectionMails from './SectionMails.vue';
+import SectionContact from './SectionContact.vue';
+
 
 
 
@@ -31,6 +34,7 @@ export default {
         SectionPrices,
         SectionNews,
         SectionMails,
+        SectionContact,
     }
 }
 </script>
