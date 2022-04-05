@@ -22,29 +22,17 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
-
-
-
-
-
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 
 import { faPenToSquare } from '@fortawesome/free-regular-svg-icons'
 import { faGem } from '@fortawesome/free-regular-svg-icons'
 import { faUser } from '@fortawesome/free-regular-svg-icons'
 import { faClock as farClock } from '@fortawesome/free-regular-svg-icons'
 
-
-
-
-
-
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-
-
-
-
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -73,6 +61,10 @@ library.add(faXmark)
 library.add(faUser)
 library.add(faArrowRight)
 library.add(faLocationDot)
+library.add(faChevronRight)
+library.add(faArrowUp)
+
+
 
 
 

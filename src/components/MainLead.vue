@@ -19,12 +19,6 @@ import SectionNews from './SectionNews.vue';
 import SectionMails from './SectionMails.vue';
 import SectionContact from './SectionContact.vue';
 
-
-
-
-
-
-
 export default {
     name: 'MainLead',
     components: {

@@ -26,18 +26,18 @@
         <ul>
           <li><span class="container-icon">
             <font-awesome-icon class="icon" icon="fa-solid fa-phone" /></span> 
-            <a href="">+1 (305) 1234-5678</a>
+            <a href="#">+1 (305) 1234-5678</a>
           </li>
           <li>
             <span class="container-icon"><font-awesome-icon class="icon" icon="fa-solid fa-envelope" /></span> 
-            <a href="">hello@example.com</a>
+            <a href="#">hello@example.com</a>
           </li>
           <li>
             <span class="container-icon"><font-awesome-icon class="icon" icon="fa-solid fa-location-dot" /></span> 
-            <a href="">Main Avenue, 987</a>
+            <a target="_blank" href="https://www.google.com/maps/place/Cala+Mariolu/@40.1268161,9.6796839,14.5z/data=!4m13!1m7!3m6!1s0x12de5a57bb086adf:0xf82e71d83aa551d8!2sCala+Goloritz%C3%A9!3b1!8m2!3d40.1084992!4d9.6893168!3m4!1s0x12de5b5bbf8d6b7b:0x1b2926e3f1e63638!8m2!3d40.1238999!4d9.6758088">Main Avenue, 987</a>
           </li>
         </ul>
-        <a href="" class="btn-map">VIEW MAP</a>
+        <a target="_blank" href="https://www.google.com/maps/place/Cala+Mariolu/@40.1268161,9.6796839,14.5z/data=!4m13!1m7!3m6!1s0x12de5a57bb086adf:0xf82e71d83aa551d8!2sCala+Goloritz%C3%A9!3b1!8m2!3d40.1084992!4d9.6893168!3m4!1s0x12de5b5bbf8d6b7b:0x1b2926e3f1e63638!8m2!3d40.1238999!4d9.6758088" class="btn-map">VIEW MAP</a>
       </div>
     </div>
   </section>
@@ -168,8 +168,8 @@ export default {
 
         .container-icon {
           position: relative;
-          width: 40px;
-          height: 40px;
+          width: 45px;
+          height: 45px;
           padding: .5rem;
           margin-right: 1rem;
           display: inline-block;
