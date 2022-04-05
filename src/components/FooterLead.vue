@@ -30,7 +30,7 @@
     <div class="credits">
       <div class="container-credits">
         <span>Enjoy the low price. We are tracking any intention of piracy.</span>
-        <span>&COPY; 2022 BOOLGEN is Proudly Powered by <a target="_blank" href="https://github.com/MuraFederico">Mura Federico</a>.</span>
+        <span>&COPY; 2022 BOOLGEN is Proudly Programmed by <a target="_blank" href="https://github.com/MuraFederico">Mura Federico</a>.</span>
       </div>
     </div>
     
