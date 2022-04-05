@@ -5,10 +5,16 @@
       <h2>Latest <span class="overlay">News</span></h2>
       <div class="container-content">
         <p>Every week we publish content about what is best in the business world</p>
-        <button class="btn">SEE ALL</button>
+        <button @click="toggleExpand" v-if="expand" class="btn">SEE LESS</button>
+        <button @click="toggleExpand" v-else class="btn">SEE ALL</button>
       </div>
-      <div class="container-cards">
+      <div v-if="expand" class="container-cards">
         <card-news v-for="card in arrCards" :key="card.title"
+        :cardData="card"
+        />
+      </div>
+      <div v-else class="container-cards">
+        <card-news v-for="card in arrCardsCompressed" :key="card.title"
         :cardData="card"
         />
       </div>
@@ -48,9 +54,33 @@ export default {
             title: 'Working from home is now a trend',
             content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
           },
-        ]
+          {
+            author: 'Andrea Miller',
+            image: 'news-4.jpg',
+            date: '2 Days Ago',
+            title: 'Working from home is now a trend',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+          },
+          {
+            author: 'Andrea Miller',
+            image: 'news-5.jpg',
+            date: '2 Days Ago',
+            title: 'Working from home is now a trend',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+          },
+        ],
+        arrCardsCompressed: [],
+        expand: false,
       }
-    }
+    },
+    methods: {
+      toggleExpand() {
+        this.expand = !this.expand;
+      }
+    },
+    created() {
+      this.arrCardsCompressed = this.arrCards.slice(0, 3);
+    },
 }
 </script>
 
@@ -110,7 +140,8 @@ export default {
     }
     .container-cards {
       display: flex;
-      justify-content: space-around;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 

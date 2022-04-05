@@ -5,10 +5,18 @@
       <h2><span>Exellence in </span> <span class="overlay"> Services</span></h2>
       <div class="container-content">
         <p>We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowed professionals. These are some options that you can hire.</p>
-        <a href="#" class="btn">SEE ALL</a>
+        <button v-if="expand" @click="toggleExpand" class="btn">SEE LESS</button>
+        <button v-else @click="toggleExpand" class="btn">SEE ALL</button>
       </div>
-      <div class="container-cards">
+      <div v-if="expand" class="container-cards">
         <card-description v-for="card in arrCards" :key="card.title"
+        :cardData="card"
+        theme="dark"
+        :btnTitle="card.btnTitle"
+        />
+      </div>
+      <div v-else class="container-cards">
+        <card-description v-for="card in arrCardsCompressed" :key="card.title"
         :cardData="card"
         theme="dark"
         :btnTitle="card.btnTitle"
@@ -66,8 +74,54 @@ export default {
             content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
             btnTitle: 'READ MORE',
           },
-        ]
+          {
+            icon: 'fa-solid fa-network-wired',
+            title: 'Audit & Assurance',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            btnTitle: 'READ MORE',
+          },
+          {
+            icon: 'fa-solid fa-briefcase',
+            title: 'Financial Advisory',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            btnTitle: 'READ MORE',
+          },
+          {
+            icon: 'fa-solid fa-chart-simple',
+            title: 'Analytics and M&A',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            btnTitle: 'READ MORE',
+          },
+          {
+            icon: 'fa-solid fa-plane-up',
+            title: 'Middle Marketing',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            btnTitle: 'READ MORE',
+          },
+          {
+            icon: 'fa-solid fa-scale-balanced',
+            title: 'Legal Consulting',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            btnTitle: 'READ MORE',
+          },
+          {
+            icon: 'fa-solid fa-inbox',
+            title: 'Regulatory Risks',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            btnTitle: 'READ MORE',
+          },
+        ],
+        arrCardsCompressed: [],
+        expand: false,
       }
+    },
+    methods: {
+      toggleExpand() {
+        this.expand = !this.expand;
+      }
+    },
+    created() {
+      this.arrCardsCompressed = this.arrCards.slice(0, 6);
     }
 }
 </script>

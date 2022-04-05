@@ -34,8 +34,10 @@
         <div class="header-content">
             <h1>Lead ~ <span class="overlay">Customer</span></h1>
             <p>Successful strategies require data analysis, creativity and customer focus, taking advantage of the latest technologies to offer eccellent services.</p>
-            <a class="btn-full" href="#section-contact">GET IN TOUCH</a>
-            <a class="btn-empty" href="#section-contact">READ MORE</a>
+            <div class="container-btn">
+                <a class="btn-full" href="#section-contact">GET IN TOUCH</a>
+                <a class="btn-empty" href="#section-contact">READ MORE</a>
+            </div>
         </div>
     </div>
   </header>
@@ -67,11 +69,16 @@ export default {
     align-items: center;
     span {
         margin: 0 .7rem;
-        font-size: 12px;
+        color: white;
+        font-size: 14px;
         p {
             padding-left: .5rem;
             display: inline-block;
         }
+    }
+    .other-info > *:hover {
+        color: $secondary-hover;
+        cursor: pointer;
     }
 }
 .jumbo {
@@ -96,7 +103,7 @@ export default {
 }
 
 .header-content {
-    width: 35%;
+    width: 45%;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -105,7 +112,7 @@ export default {
 
     h1 {
         color: white;
-        font-size: 60px;
+        font-size: 70px;
         font-weight: bold;
     }
     
@@ -123,10 +130,11 @@ export default {
             opacity: 0.2;
         }
     }
-
-
+    
     p {
-        margin: 2rem 0;
+        padding: 3rem 0 calc(3rem + 10px) 0;
+        color: white;
+        font-size: 18px;
         line-height: 1.5rem;
     }
 

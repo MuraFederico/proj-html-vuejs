@@ -60,11 +60,17 @@ nav {
         display: flex;
         list-style: none;
         li {
-            margin: 0 .5rem;
+            margin: 0 1rem;
+            font-size: 18px;
+            font-weight: 600;
             a {
                 text-decoration: none;
                 text-transform: uppercase;
                 color: white;
+
+                &:hover {
+                    color: $secondary-hover;
+                }
             }
         }
     }
@@ -74,14 +80,17 @@ nav {
 }
 
 .logo {
+    color: white;
+    font-size: 22px;
     font-weight: 600;
 }
 
 .overlay {
-        position: relative;
-        padding: .5rem 0rem .5rem 1.5rem;
-        color: #39c4c6;
-    }
+    position: relative;
+    padding: .5rem 0rem .5rem 1.5rem;
+    margin-right: .3rem;
+    color: #39c4c6;
+}
 
 .overlay::before {
     content: "";

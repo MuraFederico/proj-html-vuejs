@@ -33,6 +33,7 @@ export default {
   .container-card {
     width: 360px;
     height: 360px;
+    margin: .5rem .5rem;
     position: relative;
     overflow: hidden;
     border-radius: .5rem;
