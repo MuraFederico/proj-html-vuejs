@@ -21,17 +21,17 @@ export default {
       return {
         arrCards: [
           {
-            icon: 'fa-solid fa-clock',
+            icon: 'fa-solid fa-user-group',
             title: 'Human Capital',
             content: 'Humanizing buisness: Harness the power of technology to improve the way people work.',
           },
           {
-            icon: 'fa-solid fa-clock',
+            icon: 'fa-solid fa-chart-pie',
             title: 'Core Business',
             content: 'It takes innovative approaches to transform, modernize, and run existing plattforms.',
           },
           {
-            icon: 'fa-solid fa-clock',
+            icon: 'fa-solid fa-gauge-high',
             title: 'Performance',
             content: 'Achieving maximum impact and value from investments in finance and supply chain.',
           },

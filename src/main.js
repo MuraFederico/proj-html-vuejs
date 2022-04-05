@@ -5,6 +5,8 @@ import App from './App.vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 /* import specific icons */
+
+// solid //
 import { faClock as fasClock } from '@fortawesome/free-solid-svg-icons'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -24,12 +26,17 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { faUserGroup } from '@fortawesome/free-solid-svg-icons'
+import { faChartPie } from '@fortawesome/free-solid-svg-icons'
+import { faGaugeHigh } from '@fortawesome/free-solid-svg-icons'
 
+// regular //
 import { faPenToSquare } from '@fortawesome/free-regular-svg-icons'
 import { faGem } from '@fortawesome/free-regular-svg-icons'
 import { faUser } from '@fortawesome/free-regular-svg-icons'
 import { faClock as farClock } from '@fortawesome/free-regular-svg-icons'
 
+// brands //
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
@@ -63,31 +70,9 @@ library.add(faArrowRight)
 library.add(faLocationDot)
 library.add(faChevronRight)
 library.add(faArrowUp)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+library.add(faUserGroup)
+library.add(faChartPie)
+library.add(faGaugeHigh)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
